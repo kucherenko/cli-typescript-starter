@@ -1,5 +1,5 @@
 import { ArgumentsCamelCase, Argv } from 'yargs'
-import { logger } from '../utils/logger'
+import { logger } from '../logger'
 import * as process from 'node:process'
 import { blue, bold, gray, green, red, yellow } from 'picocolors'
 
