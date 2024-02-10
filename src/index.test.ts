@@ -1,6 +1,6 @@
 import { expect } from '@jest/globals'
 
-describe('First', () => {
+describe('First Test Case', () => {
   it('should pass', () => {
     expect(true).toBeTruthy()
   })

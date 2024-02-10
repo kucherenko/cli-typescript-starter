@@ -19,9 +19,14 @@
     "test": "jest",
     "test:watch": "jest --watchAll"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "typescript",
+    "starter",
+    "cli",
+    "bootstrap"
+  ],
+  "author": "Andrey Kucherenko <kucherenko.andrey@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "@jest/globals": "^29.7.0",
     "@tsconfig/node20": "^20.1.2",
