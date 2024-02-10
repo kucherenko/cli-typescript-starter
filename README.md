@@ -43,15 +43,15 @@ cd my-project && pnpm install
 Update the `package.json` to reflect your project's details:
 
 - Rename the package:
-    ```json
-    "name": "my-project",
-    ```
+  ```json
+  "name": "my-project",
+  ```
 - Set the command name:
-    ```json
-    "bin": {
-      "my-project": "./bin/run"
-    }
-    ```
+  ```json
+  "bin": {
+    "my-project": "./bin/run"
+  }
+  ```
 
 ### 4. Set up environment variables
 
