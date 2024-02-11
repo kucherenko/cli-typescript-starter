@@ -60,6 +60,7 @@
   "dependencies": {
     "dotenv": "^16.4.1",
     "picocolors": "^1.0.0",
+    "qoa": "^0.2.0",
     "signale": "^1.4.0",
     "yargs": "^17.7.2"
   },

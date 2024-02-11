@@ -11,6 +11,9 @@ dependencies:
   picocolors:
     specifier: ^1.0.0
     version: 1.0.0
+  qoa:
+    specifier: ^0.2.0
+    version: 0.2.0
   signale:
     specifier: ^1.4.0
     version: 1.4.0
@@ -4430,6 +4433,11 @@ packages:
   /pure-rand@6.0.4:
     resolution: {integrity: sha512-LA0Y9kxMYv47GIPJy6MI84fqTd2HmYZI83W/kM/SkKfDlajnZYfmXFTxkbY+xSBPkLJxltMa9hIkmdc29eguMA==}
     dev: true
+
+  /qoa@0.2.0:
+    resolution: {integrity: sha512-svEO3uevNU354fUBWgMxGJH0spF29EZRe140YL20PP+5C25V+u0eMeFforSIiop2879uXgxI+IFwibHBGcseEA==}
+    engines: {node: '>=6'}
+    dev: false
 
   /queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
