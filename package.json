@@ -9,6 +9,7 @@
     "build": "tsup",
     "build:watch": "tsup --watch",
     "clean": "rimraf dist",
+    "commit": "cz",
     "commitlint": "commitlint --edit",
     "compile": "tsc",
     "format": "prettier . --check",
@@ -40,6 +41,8 @@
     "@types/yargs": "^17.0.32",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-jest": "^27.6.3",
@@ -59,5 +62,10 @@
     "picocolors": "^1.0.0",
     "signale": "^1.4.0",
     "yargs": "^17.7.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
