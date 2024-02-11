@@ -1,6 +1,6 @@
 # CLI TypeScript Starter
 
-A comprehensive starter template for building command-line applications (CLI) in TypeScript, powered by Node.js. This template is designed to get you up and running with a robust development setup, including argument parsing, environment configuration, logging, testing frameworks, code formatting, and linting. Created by Andrey Kucherenko.
+An all-inclusive starter kit for crafting command-line interfaces (CLI) using TypeScript, driven by Node.js. This kit is meticulously designed to kick-start your development journey with a solid foundation, encompassing features such as argument parsing, environment setup, logging, testing suites, as well as code formatting and linting capabilities.
 
 ## Features
 
