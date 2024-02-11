@@ -7,7 +7,7 @@ const qoa = require('qoa')
 interface GreetingArgv {}
 
 export const command = 'greeting'
-export const describe = 'Simple dialogs'
+export const describe = 'Displays interactive prompts to demonstrate user input handling.'
 export const aliases = ['g']
 
 export function builder(yargs: Argv<GreetingArgv>): Argv {

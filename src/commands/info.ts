@@ -8,7 +8,7 @@ interface InfoArgv {
 }
 
 export const command = 'info'
-export const describe = 'Show the info'
+export const describe = 'Basic command to display information about the CLI application.'
 export const aliases = ['i']
 
 export function builder(yargs: Argv): Argv<InfoArgv> {
@@ -20,7 +20,7 @@ export function builder(yargs: Argv): Argv<InfoArgv> {
 }
 
 export async function handler(argv: ArgumentsCamelCase<InfoArgv>) {
-  logger.info(bold(red('Simple command for show information of cli application')))
+  logger.info(bold(red('Basic command to display information about the CLI application.')))
   logger.info(green('Node:'), bold(process.version))
   logger.info(yellow('Processor architecture:'), process.arch)
   logger.info(blue('Current dir:'), process.cwd())
