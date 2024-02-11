@@ -1,4 +1,3 @@
 pnpm test
 pnpm build
-pnpm lint:fix
-pnpm format:fix
+lint-staged

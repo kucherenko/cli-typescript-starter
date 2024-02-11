@@ -9,6 +9,7 @@
     "build": "tsup",
     "build:watch": "tsup --watch",
     "clean": "rimraf dist",
+    "commitlint": "commitlint --edit",
     "compile": "tsc",
     "format": "prettier . --check",
     "format:fix": "prettier . --write",
@@ -29,6 +30,8 @@
   "author": "Andrey Kucherenko <kucherenko.andrey@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^18.6.0",
+    "@commitlint/config-conventional": "^18.6.0",
     "@jest/globals": "^29.7.0",
     "@tsconfig/node20": "^20.1.2",
     "@types/jest": "^29.5.12",
