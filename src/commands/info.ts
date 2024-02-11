@@ -4,7 +4,7 @@ import * as process from 'node:process'
 import { blue, bold, gray, green, red, yellow } from 'picocolors'
 
 interface InfoArgv {
-  group?: boolean
+  full?: boolean
 }
 
 export const command = 'info'
@@ -12,9 +12,9 @@ export const describe = 'Show the info'
 export const aliases = ['i']
 
 export function builder(yargs: Argv): Argv<InfoArgv> {
-  return yargs.option('group', {
+  return yargs.option('full', {
     type: 'boolean',
-    alias: 'g',
+    alias: 'f',
     default: true,
   })
 }
@@ -26,4 +26,7 @@ export async function handler(argv: ArgumentsCamelCase<InfoArgv>) {
   logger.info(blue('Current dir:'), process.cwd())
   logger.info(gray('Memory usage:'), process.memoryUsage())
   logger.info(gray('Argv:'), argv)
+  if (argv.full) {
+    logger.info(gray(bold('Process config:')), process.config)
+  }
 }
