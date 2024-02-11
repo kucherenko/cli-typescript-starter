@@ -1,3 +1,0 @@
-{
-  "*.{ts,tsx,js}": ["pnpm format:fix", "pnpm lint:fix"]
-}
