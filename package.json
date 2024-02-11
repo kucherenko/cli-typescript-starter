@@ -5,6 +5,18 @@
   "bin": {
     "cli-typescript-starter": "./bin/run"
   },
+  "directories": {
+    "lib": "src",
+    "bin": "bin"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kucherenko/cli-typescript-starter.git"
+  },
   "scripts": {
     "build": "tsup",
     "build:watch": "tsup --watch",
