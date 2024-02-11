@@ -72,6 +72,28 @@ Create a `.env` file in the root directory and configure your environment variab
 
 ## Usage
 
+This starter comes equipped with several predefined scripts to facilitate development, alongside sample commands to
+demonstrate the capabilities of the CLI application.
+
+### Running Commands
+
+- In development mode, use `pnpm start [command name]` to run any command. This utilizes `ts-node` for a seamless
+  development experience.
+- In production, execute the CLI application directly with `cli-typescript-starter [command name]` to run the desired
+  command from the built project.
+
+### Sample Commands
+
+- **`info`**: Prints information about the current system and Node.js configuration. This command is useful for
+  verifying the environment in which the CLI is running.
+- **`greeting`**: Demonstrates interactive prompts within the CLI. It's a great way to see how user inputs can be
+  handled in a friendly manner.
+
+All commands are located in the `src/commands/` folder. This organization makes it easy to find and modify commands or
+add new ones as needed.
+
+### Script Commands
+
 This starter comes with several predefined scripts to help with development:
 
 - `pnpm build` - Build the project using `tsup`.
