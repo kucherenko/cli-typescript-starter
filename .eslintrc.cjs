@@ -2,7 +2,7 @@
 module.exports = {
   root: true,
   parserOptions: {
-    sourceType: 'module'
+    sourceType: 'module',
   },
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'prettier', 'jest', 'unused-imports'],
@@ -11,10 +11,10 @@ module.exports = {
     'no-console': 1,
     'prettier/prettier': 2,
     '@typescript-eslint/no-unused-vars': 'off',
-    'unused-imports/no-unused-imports': 'error'
+    'unused-imports/no-unused-imports': 'error',
   },
   env: {
     node: true,
-    'jest/globals': true
-  }
+    'jest/globals': true,
+  },
 }
