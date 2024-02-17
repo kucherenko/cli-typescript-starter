@@ -1,8 +1,7 @@
 import { Argv } from 'yargs'
 import { logger } from '../logger'
 import { bold, green } from 'picocolors'
-
-const qoa = require('qoa')
+import prompts from 'prompts'
 
 interface GreetingArgv {}
 
@@ -15,17 +14,26 @@ export function builder(yargs: Argv<GreetingArgv>): Argv {
 }
 
 export async function handler() {
-  const { username } = await qoa.input({
-    query: 'Type your name:',
-    handle: 'username',
+  const { username } = await prompts({
+    type: 'text',
+    name: 'username',
+    message: 'What is your name?',
   })
   logger.log(`Hello, ${green(bold(username))}!`)
-  const { mood } = await qoa.interactive({
-    type: 'interactive',
-    query: 'How are you?',
-    handle: 'mood',
-    symbol: '>',
-    menu: ['👌', '👍', '👎', '🤬'],
+
+  const { mood } = await prompts({
+    type: 'select',
+    message: 'How are you?',
+    name: 'mood',
+    choices: [
+      { title: '👌', value: '👌' },
+      { title: '👍', value: '👍' },
+      { title: '👎', value: '👎' },
+      {
+        title: '🤬',
+        value: '🤬',
+      },
+    ],
   })
   logger.log(`${green(bold(username))} ${mood}, Ciao!`)
 }
