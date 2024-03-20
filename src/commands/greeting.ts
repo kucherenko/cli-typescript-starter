@@ -1,7 +1,6 @@
 import { Argv } from 'yargs'
 import { logger } from '../logger'
 import { bold, green } from 'picocolors'
-import prompts from 'prompts'
 
 interface GreetingArgv {}
 
@@ -14,24 +13,22 @@ export function builder(yargs: Argv<GreetingArgv>): Argv {
 }
 
 export async function handler() {
-  const { username } = await prompts({
+  const username = await logger.prompt('What is your name?', {
     type: 'text',
-    name: 'username',
-    message: 'What is your name?',
   })
+
   logger.log(`Hello, ${green(bold(username))}!`)
 
-  const { mood } = await prompts({
+  const mood = await logger.prompt('How are you?', {
     type: 'select',
-    message: 'How are you?',
-    name: 'mood',
-    choices: [
-      { title: '👌', value: '👌' },
-      { title: '👍', value: '👍' },
-      { title: '👎', value: '👎' },
+    options: [
+      '👌',
+      '👍',
+      '👎',
       {
-        title: '🤬',
+        label: '🤬',
         value: '🤬',
+        hint: 'take care',
       },
     ],
   })

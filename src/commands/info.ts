@@ -27,6 +27,6 @@ export async function handler(argv: ArgumentsCamelCase<InfoArgv>) {
   logger.info(gray('Memory usage:'), process.memoryUsage())
   logger.info(gray('Argv:'), argv)
   if (argv.full) {
-    logger.info(gray(bold('Process config:')), process.config)
+    logger.box(gray(bold('Process config:')), process.config)
   }
 }

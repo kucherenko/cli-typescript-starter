@@ -3,6 +3,8 @@
   "compilerOptions": {
     "outDir": "dist/src",
     "baseUrl": ".",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "allowUnusedLabels": false,
     "allowUnreachableCode": false,
     "noFallthroughCasesInSwitch": true,

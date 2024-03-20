@@ -1,12 +1,3 @@
-import { Signale } from 'signale'
+import { createConsola } from 'consola'
 
-export const logger = new Signale({
-  types: {
-    idea: {
-      badge: '💡',
-      color: 'yellow',
-      label: 'idea',
-      logLevel: 'info',
-    },
-  },
-})
+export const logger = createConsola({})
