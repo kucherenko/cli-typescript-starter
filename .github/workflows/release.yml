@@ -34,7 +34,7 @@ jobs:
         run: pnpm install
 
       - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
-        run: npm audit signatures
+        run: pnpm audit signatures
 
       - name: Lint
         run: pnpm lint
