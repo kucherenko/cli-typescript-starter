@@ -73,10 +73,9 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "consola": "^3.2.3",
     "dotenv": "^16.4.1",
     "picocolors": "^1.0.0",
-    "prompts": "^2.4.2",
-    "signale": "^1.4.0",
     "yargs": "^17.7.2"
   },
   "config": {

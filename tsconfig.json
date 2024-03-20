@@ -12,7 +12,8 @@
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
     "sourceMap": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "moduleResolution": "Bundler"
   },
   "include": ["src"],
   "exclude": ["dist", "bundle", "node_modules"]
