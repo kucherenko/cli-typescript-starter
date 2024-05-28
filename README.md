@@ -16,7 +16,7 @@ This template incorporates several key tools and libraries to enhance your CLI d
 - **[Consola](https://github.com/unjs/consola):** 🐨Elegant Console Logger for Node.js and Browser
 - **[Jest](https://jestjs.io/):** A delightful JavaScript Testing Framework with a focus on simplicity.
 - **[TS-Node](https://typestrong.org/ts-node/):** TypeScript execution and REPL for Node.js.
-- **[TSUP](https://tsup.egoist.sh/):** The simplest and fastest way to bundle your TypeScript libraries.
+- **[TSUP](https://tsup.egoist.dev/):** The simplest and fastest way to bundle your TypeScript libraries.
 - **[Prettier](https://prettier.io/):** An opinionated code formatter that supports many languages and integrates with
   most editors.
 - **[ESLint](https://eslint.org/):** A pluggable and configurable linter tool for identifying and reporting on patterns
