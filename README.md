@@ -13,8 +13,7 @@ This template incorporates several key tools and libraries to enhance your CLI d
   making it easy to manage application configuration.
 - **[PicoColors](https://github.com/alexeyraspopov/picocolors):** Lightweight and fast library for styling terminal
   text.
-- **[Signale](https://github.com/klaussinani/signale):** Highly configurable logging utility, designed to be simple, but
-  powerful.
+- **[Consola](https://github.com/unjs/consola):** 🐨Elegant Console Logger for Node.js and Browser
 - **[Jest](https://jestjs.io/):** A delightful JavaScript Testing Framework with a focus on simplicity.
 - **[TS-Node](https://typestrong.org/ts-node/):** TypeScript execution and REPL for Node.js.
 - **[TSUP](https://tsup.egoist.sh/):** The simplest and fastest way to bundle your TypeScript libraries.
@@ -22,6 +21,7 @@ This template incorporates several key tools and libraries to enhance your CLI d
   most editors.
 - **[ESLint](https://eslint.org/):** A pluggable and configurable linter tool for identifying and reporting on patterns
   in JavaScript and TypeScript.
+- **[giget](https://github.com/unjs/giget)** ✨ Download templates and git repositories with pleasure!
 
 ## Prerequisites
 
@@ -31,10 +31,16 @@ Before you begin, ensure you have installed [Node.js](https://nodejs.org/) and [
 
 To start using this CLI TypeScript starter, follow these steps:
 
-### 1. Clone the repository
+### 1. Make a new project
 
 ```sh
-npx degit kucherenko/cli-typescript-starter my-project
+npx cli-typescript-starter create my-project
+```
+
+or
+
+```sh
+npx giget@latest gh:kucherenko/cli-typescript-starter my-project
 ```
 
 or
@@ -79,8 +85,8 @@ demonstrate the capabilities of the CLI application.
 
 - In development mode, use `pnpm start [command name]` to run any command. This utilizes `ts-node` for a seamless
   development experience.
-- In production, execute the CLI application directly with `cli-typescript-starter [command name]` to run the desired
-  command from the built project.
+- In production, execute the CLI application directly with `my-project [command name]` to run the desired
+  command from the built project (the name of command should be provided in `package.json` in `bin`).
 
 ### Sample Commands
 
@@ -88,6 +94,7 @@ demonstrate the capabilities of the CLI application.
   verifying the environment in which the CLI is running.
 - **`greeting`**: Demonstrates interactive prompts within the CLI. It's a great way to see how user inputs can be
   handled in a friendly manner.
+- **`create`**: Create new project based on `cli-typescript-starter`.
 
 All commands are located in the `src/commands/` folder. This organization makes it easy to find and modify commands or
 add new ones as needed.
