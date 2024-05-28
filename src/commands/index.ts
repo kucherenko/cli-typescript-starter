@@ -1,5 +1,5 @@
 import * as info from './info'
 import * as greeting from './greeting'
-import { CommandModule } from 'yargs'
+import * as create from './create'
 
-export const commands: CommandModule[] = [info, greeting]
+export const commands = [info, greeting, create]

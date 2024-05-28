@@ -1,4 +1,4 @@
-import yargs from 'yargs'
+import yargs, { CommandModule } from 'yargs'
 import { config } from 'dotenv'
 import { commands } from '../src'
 import { bgBlue, bold, red } from 'picocolors'
@@ -13,7 +13,7 @@ run.usage(
   ),
 )
 for (const command of commands) {
-  run.command(command)
+  run.command(command as CommandModule)
 }
 
 run.demandCommand(1, 'You need at least one command before moving on').help().argv
