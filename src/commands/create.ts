@@ -11,7 +11,7 @@ interface CreateArgv {
 
 export const command = 'create <path>'
 export const describe = 'Create new project based on `cli-typescript-starter`.'
-export const aliases = ['g']
+export const aliases = ['c']
 
 export function builder(yargs: Argv<CreateArgv>): Argv {
   return yargs
