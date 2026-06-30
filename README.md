@@ -23,6 +23,7 @@ This template incorporates several key tools and libraries to enhance your CLI d
 - **[giget](https://github.com/unjs/giget):** ✨ Download templates and git repositories with pleasure!
 - **[Dependabot](https://docs.github.com/en/code-security/dependabot):** Automated dependency updates via GitHub.
 
+
 ## Prerequisites
 
 Before you begin, ensure you have installed [Node.js](https://nodejs.org/) and [pnpm](https://pnpm.io/) on your system.
