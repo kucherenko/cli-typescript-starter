@@ -16,12 +16,13 @@ This template incorporates several key tools and libraries to enhance your CLI d
 - **[Consola](https://github.com/unjs/consola):** 🐨Elegant Console Logger for Node.js and Browser
 - **[Jest](https://jestjs.io/):** A delightful JavaScript Testing Framework with a focus on simplicity.
 - **[TS-Node](https://typestrong.org/ts-node/):** TypeScript execution and REPL for Node.js.
-- **[TSUP](https://tsup.egoist.dev/):** The simplest and fastest way to bundle your TypeScript libraries.
-- **[Prettier](https://prettier.io/):** An opinionated code formatter that supports many languages and integrates with
-  most editors.
-- **[ESLint](https://eslint.org/):** A pluggable and configurable linter tool for identifying and reporting on patterns
-  in JavaScript and TypeScript.
-- **[giget](https://github.com/unjs/giget)** ✨ Download templates and git repositories with pleasure!
+- **[TSUP](https://tsup.egoist.sh/):** The simplest and fastest way to bundle your TypeScript libraries.
+- **[Oxlint](https://oxc.rs/):** Ultra-fast linter for JavaScript and TypeScript (~30x faster than ESLint).
+- **[Oxfmt](https://oxc.rs/):** High-performance code formatter with Prettier compatibility.
+- **[jscpd](https://github.com/kucherenko/jscpd):** Copy/paste detector for code duplication detection.
+- **[giget](https://github.com/unjs/giget):** ✨ Download templates and git repositories with pleasure!
+- **[Dependabot](https://docs.github.com/en/code-security/dependabot):** Automated dependency updates via GitHub.
+
 
 ## Prerequisites
 
@@ -109,16 +110,26 @@ This starter comes with several predefined scripts to help with development:
 - `pnpm commitlint` - lint commit messages.
 - `pnpm compile` - Compile TypeScript files using `tsc`.
 - `pnpm clean` - Remove compiled code from the `dist/` directory.
-- `pnpm format` - Check files for code style issues using Prettier.
-- `pnpm format:fix` - Automatically fix code formatting issues with Prettier.
-- `pnpm lint` - Check code for style issues with ESLint.
-- `pnpm lint:fix` - Automatically fix code style issues with ESLint.
+- `pnpm format` - Check files for code style issues using Oxfmt.
+- `pnpm format:fix` - Automatically fix code formatting issues with Oxfmt.
+- `pnpm lint` - Check code for style issues with Oxlint.
+- `pnpm lint:fix` - Format code with Oxfmt and check with Oxlint.
+- `pnpm cpd` - Check for code duplication using jscpd.
 - `pnpm start [command]` - Run the CLI application using `ts-node`.
 - `pnpm start:node [command]` - Run the CLI application from the `dist/` directory.
 - `pnpm test` - Run unit tests.
 - `pnpm test:watch` - Run tests and watch for file changes.
 
 ## CI/CD and Automation
+
+### Automated Dependency Updates with Dependabot
+
+This project uses GitHub Dependabot to automatically keep dependencies up to date. Dependabot creates pull requests weekly to update npm dependencies, ensuring the project stays current with the latest security patches and features.
+
+The Dependabot configuration (`.github/dependabot.yml`) is set to:
+- Check for npm package updates weekly
+- Create up to 10 pull requests at a time
+- Automatically open PRs for security updates
 
 ### Automated Version Management and NPM Publishing with Semantic-Release
 
@@ -150,7 +161,7 @@ efficiently and that users are well-informed of each update through automaticall
 
 To contribute to this project or customize it for your needs, consider the following guidelines:
 
-1. **Code Styling:** Follow the predefined code style, using Prettier for formatting and ESLint for linting, to ensure
+1. **Code Styling:** Follow the predefined code style, using Oxfmt for formatting and Oxlint for linting, to ensure
    consistency.
 2. **Commit Messages:** We use `commitizen` and `commitlint` to ensure our commit messages are consistent and follow the
    conventional commit format, recommended by `@commitlint/config-conventional`. To make a commit, you can
@@ -159,17 +170,17 @@ To contribute to this project or customize it for your needs, consider the follo
    changes.
 4. **Environment Variables:** Use the `.env` file for local development. For production, ensure you configure the
    environment variables in your deployment environment.
-5. **Husky Git Hooks:** This project utilizes Husky to automate linting, formatting, and commit message verification via
-   git hooks. This ensures that code commits meet our quality and style standards without manual checks. The hooks set
-   up include pre-commit hooks for running ESLint and Prettier, and commit-msg hooks for validating commit messages
-   with `commitlint`.
+5. **Husky Git Hooks:** This project utilizes Husky to automate formatting, linting, code duplication checks, testing,
+   and commit message verification via git hooks. This ensures that code commits meet our quality and style standards
+   without manual checks. The pre-commit hook runs Oxfmt, Oxlint, jscpd, tests, and build verification. The commit-msg
+   hook validates commit messages with `commitlint`.
 
 ## Contributing
 
 Contributions are welcome! If you'd like to improve this CLI TypeScript starter, please follow the standard
 fork-and-pull request workflow. Here are a few guidelines to keep in mind:
 
-- Make sure your code adheres to the project's coding standards, including using Prettier for code formatting and ESLint
+- Make sure your code adheres to the project's coding standards, including using Oxfmt for code formatting and Oxlint
   for linting.
 - Follow the conventional commit format for your commit messages. This project uses `commitizen` and `commitlint` with
   the `@commitlint/config-conventional` configuration, enforced by Husky git hooks.
