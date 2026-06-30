@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "oxc"],
+  "categories": {
+    "correctness": "warn",
+    "suspicious": "warn",
+    "perf": "warn"
+  },
+  "rules": {
+    "eslint/sort-keys": "off",
+    "eslint/sort-imports": "off",
+    "eslint/func-style": "off",
+    "eslint/no-magic-numbers": "off",
+    "eslint/id-length": "off",
+    "typescript/no-empty-interface": "off",
+    "unicorn/catch-error-name": "off",
+    "unicorn/max-nested-calls": "off"
+  },
+  "env": {
+    "builtin": true
+  }
+}
