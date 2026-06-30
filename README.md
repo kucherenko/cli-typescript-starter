@@ -127,6 +127,7 @@ This starter comes with several predefined scripts to help with development:
 This project uses GitHub Dependabot to automatically keep dependencies up to date. Dependabot creates pull requests weekly to update npm dependencies, ensuring the project stays current with the latest security patches and features.
 
 The Dependabot configuration (`.github/dependabot.yml`) is set to:
+
 - Check for npm package updates weekly
 - Create up to 10 pull requests at a time
 - Automatically open PRs for security updates
