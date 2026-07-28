@@ -49,7 +49,7 @@
     "dotenv": "^17.4.2",
     "giget": "^3.3.0",
     "picocolors": "^1.1.1",
-    "yargs": "^18.0.0"
+    "yargs": "^18.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.1",
