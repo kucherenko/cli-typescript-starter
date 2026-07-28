@@ -65,7 +65,7 @@
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^9.1.7",
     "jest": "^30.4.2",
-    "jscpd": "^5.0.12",
+    "jscpd": "^5.0.14",
     "oxfmt": "^0.61.0",
     "oxlint": "^1.74.0",
     "rimraf": "^6.1.3",
