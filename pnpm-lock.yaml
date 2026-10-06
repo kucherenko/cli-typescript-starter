@@ -12,8 +12,8 @@ importers:
         specifier: ^3.4.2
         version: 3.4.2
       dotenv:
-        specifier: ^18.0.4
-        version: 18.0.4
+        specifier: ^18.0.5
+        version: 18.0.5
       giget:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1923,8 +1923,8 @@ packages:
     resolution: {integrity: sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==}
     engines: {node: '>=8'}
 
-  dotenv@18.0.4:
-    resolution: {integrity: sha512-jGt9uI5BIxpVO15kvy+iEFqNAwxYClKWnkptLjSNPnFLC003Imd0ofr3aEVsbpHdSBdSsbcApNIlz4nbyGMwdA==}
+  dotenv@18.0.5:
+    resolution: {integrity: sha512-aBrGvt6KhjxbEnatqMWOMidftwsrCiCvqh1yNIGB9QyF0J+VcWkKDMsvYOEm7ZS82oiV+BT1sTOtIlAmUlTpwQ==}
     engines: {node: '>=12'}
     hasBin: true
 
@@ -5501,7 +5501,7 @@ snapshots:
     dependencies:
       is-obj: 2.0.0
 
-  dotenv@18.0.4: {}
+  dotenv@18.0.5: {}
 
   duplexer2@0.1.4:
     dependencies:
