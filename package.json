@@ -69,7 +69,7 @@
     "oxfmt": "^0.78.0",
     "oxlint": "^1.93.0",
     "rimraf": "^6.1.4",
-    "semantic-release": "^25.0.9",
+    "semantic-release": "^26.0.1",
     "ts-jest": "^29.4.15",
     "ts-node": "^10.9.2",
     "tsup": "^9.0.0",
